@@ -17,6 +17,7 @@
 		CD84B7351B0A37EA00154098 /* SocialData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD84B7341B0A37EA00154098 /* SocialData.swift */; };
 		CD84B7371B0A381C00154098 /* Requests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD84B7361B0A381C00154098 /* Requests.swift */; };
 		CD84B7391B0A383300154098 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD84B7381B0A383300154098 /* Constants.swift */; };
+		CD84B73D1B0A876000154098 /* VenuesMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD84B73C1B0A876000154098 /* VenuesMapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		CD84B7341B0A37EA00154098 /* SocialData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialData.swift; sourceTree = "<group>"; };
 		CD84B7361B0A381C00154098 /* Requests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Requests.swift; sourceTree = "<group>"; };
 		CD84B7381B0A383300154098 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		CD84B73C1B0A876000154098 /* VenuesMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenuesMapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 				CD84B7341B0A37EA00154098 /* SocialData.swift */,
 				CD84B7361B0A381C00154098 /* Requests.swift */,
 				CD84B7381B0A383300154098 /* Constants.swift */,
+				CD84B73C1B0A876000154098 /* VenuesMapViewController.swift */,
 				CD84B70C1B0A2BFC00154098 /* Supporting Files */,
 			);
 			path = Sweetr;
@@ -225,6 +228,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD84B7351B0A37EA00154098 /* SocialData.swift in Sources */,
+				CD84B73D1B0A876000154098 /* VenuesMapViewController.swift in Sources */,
 				CD84B70F1B0A2BFC00154098 /* AppDelegate.swift in Sources */,
 				CD84B7311B0A375000154098 /* TweetsTableViewController.swift in Sources */,
 				CD84B7371B0A381C00154098 /* Requests.swift in Sources */,
