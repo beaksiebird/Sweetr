@@ -18,6 +18,8 @@
 		CD84B7371B0A381C00154098 /* Requests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD84B7361B0A381C00154098 /* Requests.swift */; };
 		CD84B7391B0A383300154098 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD84B7381B0A383300154098 /* Constants.swift */; };
 		CD84B73D1B0A876000154098 /* VenuesMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD84B73C1B0A876000154098 /* VenuesMapViewController.swift */; };
+		CDD068B31B14B8F50085206A /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDD068B11B14B8F50085206A /* Fabric.framework */; };
+		CDD068B41B14B8F50085206A /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDD068B21B14B8F50085206A /* Crashlytics.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,8 @@
 		CD84B7361B0A381C00154098 /* Requests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Requests.swift; sourceTree = "<group>"; };
 		CD84B7381B0A383300154098 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		CD84B73C1B0A876000154098 /* VenuesMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenuesMapViewController.swift; sourceTree = "<group>"; };
+		CDD068B11B14B8F50085206A /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		CDD068B21B14B8F50085206A /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDD068B41B14B8F50085206A /* Crashlytics.framework in Frameworks */,
+				CDD068B31B14B8F50085206A /* Fabric.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +75,7 @@
 		CD84B7001B0A2BFC00154098 = {
 			isa = PBXGroup;
 			children = (
+				CDD068B01B14B8D90085206A /* Frameworks */,
 				CD84B70B1B0A2BFC00154098 /* Sweetr */,
 				CD84B7231B0A2BFC00154098 /* SweetrTests */,
 				CD84B70A1B0A2BFC00154098 /* Products */,
@@ -127,6 +134,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		CDD068B01B14B8D90085206A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CDD068B11B14B8F50085206A /* Fabric.framework */,
+				CDD068B21B14B8F50085206A /* Crashlytics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,6 +153,7 @@
 				CD84B7051B0A2BFC00154098 /* Sources */,
 				CD84B7061B0A2BFC00154098 /* Frameworks */,
 				CD84B7071B0A2BFC00154098 /* Resources */,
+				CDD068AF1B14B8180085206A /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -221,6 +238,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CDD068AF1B14B8180085206A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run e2a1a0d6aec19d4c2ef905fba793b52ee72310f4 b18db9103bdf4fe2d884a080f677326e0be28e299322fcfdd8c28ea79643726d";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CD84B7051B0A2BFC00154098 /* Sources */ = {
@@ -360,6 +393,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Sweetr/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -370,6 +407,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Sweetr/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
